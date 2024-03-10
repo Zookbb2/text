@@ -1,0 +1,72 @@
+.topnav{
+    background: #333;
+    height: 40px;
+    color:#b0b0b0;
+    font-size: 12px;
+}
+
+
+.topnav-manu {
+
+    line-height: 40px;
+}
+
+.topnav-manu li a{
+    padding: 0 10px;
+    border-right: 1px solid #424242;
+    padding-right: 14px;
+}
+
+.topnav-manu li:last-child a{
+    border: none;
+}
+
+.topnav-manu li:first-child a{
+    padding-left: 0;
+}
+.topnav-manu a:hover{
+    color: #ccc;
+}
+
+/* 购物车 */
+.topnav-car{
+    width: 120px;
+    height: 40px;
+    background: #424242;
+    position: relative;
+}
+
+.topnav-car a{
+    display: block;
+    width: 100%;
+    height: 100%;
+  text-align: center;
+    line-height: 40px;
+}
+
+.topnav-link .iconfont{
+    margin-right: 3px;
+}
+
+.topnav-detail{
+    width: 328px;
+    height: 100xp;
+    top: 40px;
+    border: 1px solid #ccc;
+    line-height: 100px;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    border-top: none;
+    background: #fff;
+    display: none;
+    z-index: 50;
+}
+
+.topnav-car:hover .topnav-detail{
+    display: block;
+}
+.topnav-car:hover .topnav-link{
+    background: #fff;
+    color: #ff6700;
+}

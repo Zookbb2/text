@@ -1,0 +1,157 @@
+.header {
+  height: 100px;
+  position:relative;
+}
+
+.header-log {
+  width: 56px;
+  height: 56px;
+  background: url(../img/logo.png);
+  background-size: 56px 56px;
+  margin-top: 22px;
+  margin-right: 172px;
+}
+
+.header-log h1 {
+  display: none;
+}
+
+.header-manu > a {
+    line-height: 100px;
+  height: 100px;
+  padding: 0 7px;
+  font-size: 16px;
+}
+
+.header-submanu {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 100px;
+padding: 30px 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  display: none;
+  z-index: 30;
+  background: #fff;
+}
+
+ .header-cover img {
+ width: 160px;
+ height: 110px;
+}
+
+.header-submanu a{
+    width: 204px;
+    text-align: center;
+    font-size: 12px;
+    color: #000;
+}
+
+.header-cover {
+    border-right: 1px solid #eee;
+    }
+
+    .header-submanu a:last-child .header-cover{
+    border-right:none
+}
+
+.header-name{
+    margin-top: 10px;
+}
+ 
+.header-price {
+    color: #ff6700;
+}
+
+.header-manu:hover .header-submanu {
+    display: block;
+}
+
+/* 搜索框开始 */
+.header-search input{
+    width: 245px;
+    height: 50px;
+    padding: 0 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.header-searchicon{
+    width: 55px;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-left: none;
+    background: #fff;
+    cursor: pointer;
+    
+}
+
+.header-search {
+    margin-top: 25px;
+    position: relative;
+    
+}
+
+.header-searchicon .iconfont{
+    font-size: 20px;
+    color: #777;
+}
+
+.header-suggest {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 245px;
+    border: 1px solid #ff6700;
+    border-top: none;
+    z-index: 40;
+    background: #fff;
+    display: none;
+}
+
+.header-suggest a{
+    display: block;
+    padding:0 10px;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.header-suggest a:hover{
+    background: #eee;
+    color: inherit;
+}
+
+.header-search input:hover ~ .header-searchicon{
+    border-color: #aaa;
+}
+
+.header-search input:hover{
+    border-color: #aaa;
+}
+
+.header-search input:focus ~ .header-suggest {
+    display: block;
+}
+
+.header-search input:focus {
+    border-color: #ff6700;
+
+}
+
+.header-search input:focus ~ .header-searchicon {
+    border-color: #ff6700;
+
+}
+
+.header-searchicon:hover{
+    background: #ff6700;
+   
+}
+
+.header-searchicon:hover .iconfont{
+    color: #fff;
+}
+
